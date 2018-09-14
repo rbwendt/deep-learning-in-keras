@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>convo</title>
+    <script src="sourceimage.js"></script>
+    <script src="convo.js"></script>
+    <script src="togrid.js"></script>
+    <style>
+        td {
+            font-size: 7px;
+        }
+        table.convo td {
+            font-size: 12px;
+            border: 1px solid grey;
+            padding: 4px
+        }
+        :root {
+            --cell-size: 11px;
+        }
+        table.grid {
+            table-layout: fixed;
+        }
+        table.grid td {
+            width: var(--cell-size);
+            height: var(--cell-size);
+        }
+        #to td {
+            /* color: blue;
+            filter: invert(100%); */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <tr><td>
+            <div id="from"></div>
+        </td><td>
+            <div id="conv"></div>
+        </td><td>
+            <div id="to"></div>
+        </td></tr>
+    </table>
+
+    <script>
+        const from = new Grid(document.getElementById('from'))
+        from.setValues(seven())
+        from.draw()
+
+        const to = new Grid(document.getElementById('to'), -255, 255)
+
+        const convo = new Convo(document.getElementById('conv'), 3, from, to)
+    </script>
+
+</body>
+</html>

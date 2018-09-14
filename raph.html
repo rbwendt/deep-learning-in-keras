@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>math.js | plot</title>
+  <script src="https://unpkg.com/mathjs@4.3.0/dist/math.min.js"></script>
+
+  <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+
+  <style>
+    input[type=text] {
+      width: 300px;
+    }
+    input {
+      padding: 6px;
+    }
+    body, html, input {
+      font-family: sans-serif;
+      font-size: 11pt;
+
+    }
+    form {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <script>var y = x => (x - 0.2) * (x - 1.35)</script>
+<form id="form">
+  <label for="eq">Enter an equation:</label>
+  <input type="text" id="eq" value="" />
+  <input type="submit" value="Draw" />
+  <div id="iterations">
+    <div>
+        <label for="guess">First guess:</label><input id="guess" type="number" value=1> <button id="goguess">guess</button>
+    </div>  
+  </div>
+</form>
+
+<div id="plot"></div>
+
+<p>
+  Used plot library: <a href="https://plot.ly/javascript/">Plotly</a>
+</p>
+
+<script>
+    var lastValue
+    function firstGuess() {
+        lastValue = parseFloat(document.getElementById("guess"), 10)
+    }
+    document.getElementById("goguess").addEventListener("click", firstGuess, false)
+    function iterate() {
+        var iterationContainer = document.getElementById("iterations")
+        
+    }
+  function draw() {
+    try {
+      // compile the expression once
+      var expression = document.getElementById('eq').value;
+      var expr = math.compile(expression);
+
+      // evaluate the expression repeatedly for different values of x
+      var xValues = math.range(-0.400, 1.76, 0.05).toArray();
+      var yValues = xValues.map(function (x) {
+        return expr.eval({x: x});
+      });
+
+      // render the plot using plotly
+      var trace1 = {
+        x: xValues,
+        y: yValues,
+        type: 'scatter'
+      };
+      var data = [trace1];
+      Plotly.newPlot('plot', data);
+    }
+    catch (err) {
+      console.error(err);
+      alert(err);
+    }
+  }
+
+  document.getElementById('form').onsubmit = function (event) {
+    event.preventDefault();
+    draw();
+  };
+
+  draw();
+</script>
+
+</body>
+</html>
+

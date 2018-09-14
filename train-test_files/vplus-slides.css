@@ -1,0 +1,466 @@
+body .devsite-vplus-slide-frame {
+  font-size: 20px;
+  line-height: normal;
+}
+
+.devsite-vplus-slide-frame .title-background {
+  background-color: #4285f4;
+}
+
+.devsite-vplus-slide-frame .gray-background {
+  background-color: #434343;
+}
+
+.devsite-vplus-slide-frame div[data-start-time] {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  align-items: center;
+}
+
+.devsite-vplus-slide-frame h1.title {
+  font-size: 50px;
+  line-height: inherit;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  top: 50% !important;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  width: 80%;
+}
+
+.devsite-vplus-slide-frame h2 {
+  line-height: inherit;
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  width: 99.9%; /** Avoid overlap with right border of the slide frame. **/
+}
+
+.devsite-vplus-slide-frame ul {
+  font-size: 18px;
+  padding-left: 60px;
+  width: 95%;
+}
+
+.devsite-vplus-slide-frame .small-list-text li {
+  font-size: 75%;
+}
+
+.devsite-vplus-slide-frame p, .devsite-vplus-slide-frame pre {
+  padding-left: 30px;
+}
+
+.devsite-vplus-slide-frame table {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.devsite-vplus-slide-frame td {
+  width: 50%;
+}
+
+.devsite-vplus-slide-frame .large-text {
+  font-size: 40px;
+  line-height: inherit;
+}
+
+.devsite-vplus-slide-frame .small-text {
+  font-size: 18px;
+}
+
+.devsite-vplus-slide-frame .restrict-width-for-video {
+  width: 75%;
+}
+
+.devsite-vplus-slide-frame .split img {
+  position: inherit;
+}
+
+.devsite-vplus-slide-frame img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+}
+
+.devsite-vplus-slide-frame svg {
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.devsite-vplus-slide-frame .inline-img {
+  width: 38%;
+  position: relative;
+  display: block;
+}
+
+.devsite-vplus-slide-frame .inline-img-large {
+  width: 80%;
+  position: relative;
+  display: block;
+}
+
+.devsite-vplus-slide-frame .shared-img {
+  margin: none;
+  position: inherit;
+  width: 100%;
+}
+
+.devsite-vplus-slide-frame .embed-container-large {
+  height: 70%;
+  width: 90%;
+  margin: auto;
+}
+
+.devsite-vplus-slide-frame .embed-container-small {
+  height: 40%;
+  width: 50%;
+  margin: auto;
+}
+
+.devsite-vplus-slide-frame .embed-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.devsite-vplus-slide-frame .devsite-multiple-choice {
+  padding: 0 5%;
+  font-size: initial;
+}
+
+.devsite-vplus-slide-frame .indented p {
+  margin: 3px 0;
+}
+
+.devsite-vplus-slide-frame .indented p:not(:first-of-type) {
+  padding-left: 60px;
+}
+
+.devsite-vplus-slide-frame .indented-list li {
+  margin-left: 15px;
+}
+
+.devsite-vplus-slide-frame .stagger {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.devsite-vplus-slide-frame .stagger p:nth-of-type(2) {
+  padding-left: 80px;
+}
+
+.devsite-vplus-slide-frame .stagger p:nth-of-type(3) {
+  padding-left: 120px;
+}
+
+.devsite-vplus-slide-frame .stagger p:nth-of-type(4) {
+  padding-left: 160px;
+}
+
+.devsite-vplus-slide-frame .split {
+  display: inline-block;
+  width: 100%
+}
+
+.devsite-vplus-slide-frame .split-left {
+  position: relative;
+  float: left;
+}
+
+.devsite-vplus-slide-frame .split-right {
+  position: relative;
+  float: right;
+}
+
+.devsite-vplus-slide-frame .split-equal {
+  width: 50%;
+}
+
+.devsite-vplus-slide-frame .split-large {
+  width: 70%;
+}
+
+.devsite-vplus-slide-frame .split-small {
+  width: 30%;
+}
+
+.devsite-vplus-slide-frame .height-padded-list li {
+  margin: 15px 0;
+}
+
+.devsite-vplus-slide-frame .progressive-list li:not(:last-child) {
+  color: gray;
+}
+
+.devsite-vplus-slide-frame .center-text-horizontal {
+  text-align: center;
+}
+
+.devsite-vplus-slide-frame .text-for-screen-reader {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.devsite-vplus-slide-frame .gray-text {
+  color: gray;
+}
+
+.devsite-vplus-slide-frame .green-text {
+  color: green;
+}
+
+.devsite-vplus-slide-frame .red-text {
+  color: red;
+}
+
+.devsite-vplus-slide-frame .link-exercise {
+  font-size: 36px;
+  line-height: inherit;
+  padding: 22% 5% 5% 12%;
+}
+
+.devsite-vplus-slide-frame .link-exercise a {
+  text-decoration: underline;
+}
+
+.devsite-vplus-slide-frame .monospace, .devsite-vplus-slide-frame .monospace code {
+  color: black;
+  background-color: transparent;
+  font-family: monospace;
+}
+
+.devsite-vplus-slide-frame .arrow {
+  position: absolute;
+  top: 36%;
+  transform: translatey(-36%);
+  left: 45%;
+  width: 120px;
+  margin: 50px auto;
+}
+
+.devsite-vplus-slide-frame .arrow .line {
+  margin-top: 14px;
+  width: 50px;
+  background: green;
+  height: 10px;
+  float: left;
+}
+
+.devsite-vplus-slide-frame .arrow .point-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid green;
+  float: right;
+}
+
+/* Handling to toggle callouts on embeddings diagrams */
+
+/* Toggle off all ellipses by default, whether in slides or in main docs */
+.embeddings-diagram ellipse {
+  display: none;
+}
+
+/* Toggle-ons for callouts in slides */
+.devsite-vplus-slide-frame #sparse-encoding ellipse#BlueLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #threed-embedding ellipse#GreenLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #lat-long ellipse#YellowLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #hidden-layers ellipse#PinkLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #dnn-output ellipse#RedLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #digits-sparse-encoding ellipse#BlueLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #digits-other-features ellipse#YellowLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #digits-threed-embedding ellipse#GreenLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #digits-hidden-layers ellipse#PinkLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #digits-logit-layer ellipse#PurpleLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #digits-target-class-layer ellipse#OrangeLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #movies-target-class-layer ellipse#OrangeLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #movies-sparse-encoding ellipse#BlueLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #movies-threed-embedding ellipse#GreenLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #movies-other-features ellipse#YellowLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #movies-hidden-layers ellipse#PinkLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #movies-logit-layer ellipse#PurpleLabel {
+  display: block;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram {
+  font-size: 16px;
+  min-width: 720px;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li div {
+  display: inline-block;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .diagram-name {
+  border: 1px solid;
+  list-style-type: none;
+  text-align: center;
+  width: 280px;
+  padding: 5px 10px;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .diagram-definition {
+  display: inline;
+  margin-left: 16px;
+  height: 25px;
+  line-height: inherit;
+  font-size: 80%;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .side-by-side {
+  padding: 0;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .side-by-side li {
+  width: 138px;
+  display: inline-block;
+  margin: 0
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .side-by-side .diagram-name {
+  width: 100%;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .side-by-side .diagram-definition {
+  margin-left: 10px;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li:nth-of-type(1) .diagram-name {
+  background-color: #ead1dc;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li:nth-of-type(2) .diagram-name {
+  background-color: #cfe2f3;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li:nth-of-type(3) .diagram-name {
+  background-color: #d9ead3;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li:nth-of-type(4) .diagram-name {
+  background-color: #fff2cc;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram li:nth-of-type(5) .diagram-name {
+  background-color: #fce5cd;
+}
+
+.devsite-vplus-slide-frame #tf-api-diagram .side-by-side li .diagram-name {
+  background-color: #eeeeee;
+}
+
+.devsite-vplus-slide-frame .svg-container {
+  height: 70%;
+  display: flex;
+}
+
+.devsite-vplus-slide-frame .responsive-svg {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%;
+}
+
+.devsite-vplus-slide-frame .responsive-svg svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.devsite-vplus-slide-frame .object-svg {
+  width: 100%;
+}
+
+.devsite-vplus-slide-frame .non-ml-code #NonMLCode {
+  visibility: hidden;
+}
+
+.devsite-vplus-slide-frame .three-authors-per-set #ThreeAuthorsPerSetGroup {
+  visibility: visible;
+}
+
+.devsite-vplus-slide-frame .one-author-per-set #ThreeAuthorsPerSetGroup {
+  visibility: hidden;
+}
+
+.devsite-vplus-slide-frame .three-authors-per-set #OneAuthorPerSetGroup {
+  visibility: hidden;
+}
+
+.devsite-vplus-slide-frame .one-author-per-set #OneAuthorPerSetGroup {
+  visibility: visible;
+}
